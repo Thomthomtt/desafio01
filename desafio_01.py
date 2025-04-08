@@ -11,6 +11,8 @@ soma_horas = entrada_h1 + entrada_h2
 if soma_minutos >= 60:
     soma_horas = soma_horas+1
     soma_minutos = soma_minutos - 60
+if soma_horas > 12:
+    soma_horas -=12
 print(f"{soma_horas}:{soma_minutos}")
 
 
